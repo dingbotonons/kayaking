@@ -1,0 +1,160 @@
+# BioluminescentKayaking.us — full content
+
+> Independent guide to bioluminescent kayaking in the USA: tour comparisons for Florida, Puerto Rico, California and Washington State, plus a nightly Glow Forecast for 12 locations. The site does not run tours. Bookings are made through GetYourGuide; the site may earn a commission, which never changes the price the reader pays. All tour prices below are GetYourGuide prices checked on 12 Nov 2026. Tour ratings and review counts are GetYourGuide's own figures.
+
+## The Glow Forecast method
+
+Each location's nightly score is an estimate out of 100, labelled "Glow estimate" wherever it appears on the site. No live bioluminescence measurement exists for any bay, so the score combines four sourced inputs:
+
+- Season (up to 40 points): whether the location is in its glowing season and how strong the organism is now, from a published season baseline for each bay (sources named per location below; baselines checked 2026-11-13, reviewed every season).
+- Moon darkness (up to 30 points): how dark the sky will be during tour hours, 19:00–24:00 local. Calculated with the SunCalc astronomy library. Moonlight counts only while the moon is above the horizon — a full moon that sets before the tour costs nothing.
+- Clear skies (up to 15 points): cloud cover over the bay that night, from Open-Meteo forecasts. Clouds can help by hiding a bright moon, which the calculation accounts for.
+- Calm water (up to 15 points): wind speed from Open-Meteo. Flat water shows the glow best and paddles easiest.
+- Rain rule: more than 25mm of rain in the previous 48 hours caps the score at 60, for Florida and Puerto Rico locations only (heavy rain dilutes the bays and stirs in fresh water).
+
+Water temperatures, where shown, are live observations from NOAA Tides and Currents stations near each bay, shown with the station name and reading time. The NOAA stations near the Florida and Puerto Rico bays do not report water temperature, so none is shown for those locations. San Diego never receives a score: its glow comes from Lingulodinium polyedra red tides, which are unpredictable (source: Scripps Institution of Oceanography red-tide FAQ). The site reports San Diego blooms when they are spotted; it never forecasts them.
+
+Full method page: https://bioluminescentkayaking.us/glow-forecast-method/
+
+## How tours are ranked
+
+Four criteria, in the same order for every location (full page: https://bioluminescentkayaking.us/how-we-rank-tours/):
+
+1. Glow strength of the water — how bright that bay or lagoon gets in its season, from the organism and the setting.
+2. The kayak experience — clear kayaks where they exist, small groups, and how much of the trip is paddling in the glow versus getting there.
+3. Launch logistics — how easy the meeting point is to reach, parking and transport options, and whether the timing works for visitors without a car.
+4. Price and booking terms — the price against other tours at the same location, and the cancellation terms, on the day checked. Prices are date-stamped on every page.
+
+Process: list every bookable tour found for the location on GetYourGuide; check prices and terms and date-stamp the check; choose picks by the four criteria. The site never awards its own star ratings.
+
+## Locations and tours (prices checked 12 Nov 2026)
+
+### Cocoa Beach, Florida
+
+Page: https://bioluminescentkayaking.us/florida/cocoa-beach/
+Organism: Pyrodinium bahamense dinoflagellates in summer, comb jellies in winter. Season baseline source: Otter Paddle Orlando, Bioluminescence Florida operator season guide (checked 2026-11-13). Dinoflagellates May–Sep (peak Jul–Aug); comb jellies Oct–Apr give a softer glow, so winter is moderate, never zero.
+
+Tours on GetYourGuide:
+- Bioluminescent Kayak Tour, Cocoa Beach & Merritt Island — from $64.20, 1.5 hours, launches from Cape Crossing Marina, Merritt Island. GetYourGuide rating 4.5 from 169 reviews. The most-reviewed Cocoa Beach paddle on GetYourGuide, launching into the Indian River Lagoon.
+- Florida: Clear Bottom Bioluminescent Kayak Tour — from $100.03, 1.5 hours, launches from Kiwanis Island Park, Merritt Island. GetYourGuide rating 5.0 from 1 review. Clear-bottom kayak from Kiwanis Island Park — the glow right under your seat.
+- Florida: LED Night Kayak Tour with Comb Jellies — from $100.03, 1.5 hours, launches from Kiwanis Island Park, Merritt Island. No GetYourGuide rating shown. A clear-kayak night tour built around the seasons — comb jellies in winter, dinoflagellates in summer.
+
+### Titusville & Merritt Island, Florida
+
+Page: https://bioluminescentkayaking.us/florida/titusville/
+Organism: Pyrodinium bahamense dinoflagellates in summer, comb jellies in winter. Same Indian River Lagoon baseline as Cocoa Beach. Season baseline source: Otter Paddle Orlando, Bioluminescence Florida operator season guide (checked 2026-11-13).
+
+Tours on GetYourGuide:
+- Titusville: Bioluminescent Clear Kayak Tour — from $119, 1.5 hours, launches from Haulover Canal, Merritt Island National Wildlife Refuge. No GetYourGuide rating shown. Clear kayak from Haulover Canal, inside the refuge — the darkest launch on the Space Coast.
+
+### Near Orlando, Florida
+
+Page: https://bioluminescentkayaking.us/florida/bioluminescent-kayaking-near-orlando/
+Organism: Pyrodinium bahamense dinoflagellates in summer, comb jellies in winter. Same Indian River Lagoon baseline as Cocoa Beach; these tours launch from the Merritt Island / Cocoa Beach area, about an hour from Orlando. Season baseline source: Otter Paddle Orlando (checked 2026-11-13).
+
+Tours on GetYourGuide:
+- Orlando: Magic After Dark Bioluminescence Kayak Tour — from $85, 1.5 hours, launches from Kayak Beach, off Highway 528. GetYourGuide rating 4.9 from 46 reviews. The Orlando-marketed pick, launching off Highway 528 toward Cape Canaveral.
+- Orlando: Bioluminescence Clear Kayaking or Paddleboarding — from $75, , launches from Space Coast lagoon launch sites. GetYourGuide rating 4.3 from 79 reviews. Clear kayak or paddleboard across lagoon launch sites on the Space Coast.
+
+### Mosquito Bay, Vieques, Puerto Rico
+
+Page: https://bioluminescentkayaking.us/puerto-rico/mosquito-bay-vieques/
+Organism: Pyrodinium bahamense, year-round, Guinness-record density. Season baseline source: Casa Vieques, Vieques Bioluminescent Bay Guide (checked 2026-11-13). Swimming is not allowed in Mosquito Bay.
+
+Tours on GetYourGuide:
+- Vieques: Bioluminescent Bay Full Clear Kayaking — from $112, 2 hours, launches from Mosquito Bay, Vieques. GetYourGuide rating 4.7 from 108 reviews. The full clear-kayak paddle on the brightest bay — 2 hours on the water.
+- Vieques: Bioluminescent Bay Kayak Night Tour with Guide — from $55, 1 hour, launches from Mosquito Bay, Vieques. GetYourGuide rating 4.4 from 53 reviews. The budget way into Mosquito Bay — a 1-hour guided clear-kayak tour.
+- Vieques Island: Clear Kayaking Biobay Tour — from $63, 1.5 hours, launches from Esperanza, Vieques. GetYourGuide rating 4.7 from 12 reviews. Clear kayaking from Esperanza, on the bay's south-shore village.
+- Transparent Canoe in the Bioluminescent Bay in Vieques — from $57, 1 hour, launches from Mosquito Bay, Vieques. GetYourGuide rating 4.3 from 32 reviews. A transparent canoe instead of a kayak — a slower, stable way to see the glow.
+- Vieques: Bioluminescent Bay Night Clear Kayak Tour — from $64.88, 1.5 hours, launches from Mosquito Bay, Vieques. GetYourGuide rating 4.1 from 69 reviews. A 1.5-hour clear-kayak night tour with a solid run of reviews behind it.
+- Vieques: Bioluminescent Bay Boat Tour — from $105, 40 minutes, launches from Mosquito Bay, Vieques. GetYourGuide rating 4.5 from 54 reviews. The no-paddle option: an electric catamaran trip across the bay.
+- Vieques: Bioluminescent Bay Clear Kayak Tour — Prices vary by date, 1.5 hours, launches from Mosquito Bay, Vieques. GetYourGuide rating 5.0 from 1 review. A newer clear-kayak listing — book it for the format, not a long track record.
+- Vieques Bio Bay Kayak Experience — From Mainland Puerto Rico — from $295, 7 hours, launches from Departs Fajardo (mainland). GetYourGuide rating 5.0 from 1 review. Mosquito Bay from the mainland: departs Fajardo with the crossing handled.
+
+### Laguna Grande, Fajardo, Puerto Rico
+
+Page: https://bioluminescentkayaking.us/puerto-rico/laguna-grande-fajardo/
+Organism: Pyrodinium bahamense, year-round. Season baseline source: Puerto Rico Bio Bay Kayak Tours, bay comparison and timing guide (checked 2026-11-13).
+
+Tours on GetYourGuide:
+- Fajardo: Bio Bay Kayak Tour — from $72.48, 2 hours, launches from Laguna Grande, Fajardo. GetYourGuide rating 4.4 from 311 reviews. The most-reviewed Laguna Grande paddle on GetYourGuide.
+- Fajardo: Bioluminescent Lagoon Kayak or Full Moon Kayak Tour — from $85, 3 hours, launches from Laguna Grande, Fajardo. GetYourGuide rating 4.6 from 275 reviews. The long-standing Fajardo listing — the longest of the three on the water.
+- Fajardo: Bioluminescent Bay Kayak Tour in Puerto Rico — from $65.78, 2 hours, launches from Laguna Grande, Fajardo. GetYourGuide rating 4.0 from 57 reviews. The lowest-priced Laguna Grande kayak tour we found on GetYourGuide.
+
+### La Parguera, Puerto Rico
+
+Page: https://bioluminescentkayaking.us/puerto-rico/la-parguera/
+Organism: Pyrodinium bahamense, year-round; the gentlest of the three Puerto Rico bays. Season baseline source: Puerto Rico Bio Bay Kayak Tours, bay comparison and timing guide (checked 2026-11-13). La Parguera is the only Puerto Rico bio bay where swimming in the glow is allowed.
+
+Tours on GetYourGuide:
+- La Parguera: Sunset and Biobay or Late Night Biobay Cruise — from $65, 2 hours, launches from La Parguera waterfront, Lajas. GetYourGuide rating 4.8 from 581 reviews. The most-reviewed La Parguera trip — a sunset or late-night cruise with a swim stop.
+- La Parguera: Bioluminescent Bay Boat Tour — from $60, 1 hour, launches from La Parguera waterfront, Lajas. GetYourGuide rating 4.6 from 296 reviews. The classic 1-hour boat tour with swimming in the glowing water.
+- La Parguera: Bioluminescent Bay Water Bike Tour — from $79, 1.5 hours, launches from La Parguera waterfront, Lajas. GetYourGuide rating 4.8 from 106 reviews. Water bikes instead of a boat — you pedal above the glow, and there's no swimming on this one.
+- La Parguera: Bioluminescent Bay Boat Tour — Small Group — from $79, 1 hour, launches from La Parguera waterfront, Lajas. No GetYourGuide rating shown. A small-group catamaran if you want the bay without the swim stop.
+- Puerto Rico Bioluminescent Bay Boat Tour with Swim — from $100, 2 hours, launches from La Parguera waterfront, Lajas. GetYourGuide rating 5.0 from 1 review. A 2-hour boat tour with swimming — a newer listing with few reviews so far.
+
+### Bio bay tours from San Juan, Puerto Rico
+
+Page: https://bioluminescentkayaking.us/puerto-rico/bio-bay-tours-from-san-juan/
+Organism: Depends on the bay visited — most San Juan departure tours go to Laguna Grande, Fajardo. These tours include transport from San Juan; the glow itself follows the destination bay's season.
+
+Tours on GetYourGuide:
+- From San Juan: Bioluminescent Bay Kayak Adventure at Night — from $110, 5 hours, launches from San Juan (transport included). GetYourGuide rating 4.1 from 615 reviews. The San Juan departure with the deepest review base — Laguna Grande and back in one evening.
+- San Juan: Bioluminescent Laguna Grande Bay Night Kayaking — Prices vary by date, 5 hours, launches from San Juan. GetYourGuide rating 4.4 from 96 reviews. A 5-hour San Juan departure for Laguna Grande, priced by date on GetYourGuide.
+- From San Juan: El Yunque Rainforest & Bio Bay Kayak Combo — from $165, 12 hours, launches from San Juan (transport included). GetYourGuide rating 4.6 from 167 reviews. The full-day combo: El Yunque rainforest by day, bio bay kayak by night.
+- San Juan: El Yunque and Bio Bay Full-Day Tour with Transport — from $184, 12 hours, launches from San Juan (transport included). GetYourGuide rating 4.7 from 248 reviews. El Yunque plus bio bay with the transport handled for you.
+- From San Juan: La Parguera Glowing Bio Bay Boat Tour — from $199, 9 hours, launches from San Juan (transport included). No GetYourGuide rating shown. La Parguera from San Juan without the drive — boat trip and swim included.
+- San Juan to La Parguera Bio Bay Boat Ride and Swimming — from $65, , launches from San Juan (transport included). GetYourGuide rating 4.5 from 8 reviews. The lowest-priced San Juan departure we found for La Parguera.
+
+### San Juan Island, Washington
+
+Page: https://bioluminescentkayaking.us/washington/san-juan-island/
+Organism: Noctiluca scintillans and other dinoflagellates. Season baseline source: Sea Quest Kayak Tours, Bioluminescence Kayak Tours, San Juan Island (checked 2026-11-13). Season runs June–September, peaking mid-summer.
+
+Tours on GetYourGuide:
+- Bioluminescence Night Paddle — from $179, 3 hours, launches from Jackson's Beach, Friday Harbor. GetYourGuide rating 4.3 from 9 reviews. Friday Harbor's night paddle in Griffin Bay — a short summer season, June to mid-September.
+- Friday Harbor: Sunset Bioluminescence Kayak Tour — from $226, 4 hours, launches from Friday Harbor. No GetYourGuide rating shown. The beginner format: a beach lesson first, then the sunset paddle, with transport from the ferry terminal.
+
+### Orcas Island, Washington
+
+Page: https://bioluminescentkayaking.us/washington/orcas-island/
+Organism: Noctiluca scintillans and other dinoflagellates. Same Salish Sea baseline as San Juan Island. Season baseline source: Sea Quest Kayak Tours, San Juan Island (checked 2026-11-13).
+
+Tours on GetYourGuide:
+- Eastsound: Orcas Island Bioluminescent Kayak Tour — from $119, 2 hours, launches from Rosario Resort, Eastsound. GetYourGuide rating 4.4 from 20 reviews. Orcas Island's glow paddle, departing Eastsound in the summer season.
+
+### Tomales Bay, California
+
+Page: https://bioluminescentkayaking.us/california/tomales-bay/
+Organism: dinoflagellates (incl. Lingulodinium polyedra). Season baseline source: Napa Valley Paddle, Bioluminescence in Tomales Bay guide (checked 2026-11-13). Glow can occur year-round and is prominent in summer; select nights August–November are the known window (peak September–October); winter is effectively off. There is no standalone GetYourGuide bioluminescent kayak tour for Tomales Bay, so the site lists no tour cards here and explains booking direct with local operators.
+
+### San Diego, California
+
+Page: https://bioluminescentkayaking.us/california/san-diego/
+Organism: Lingulodinium polyedra red tides (unpredictable). No glow score is published for San Diego and there are no tour cards: the LED-lit "glow" kayak products sold there are not bioluminescence, so the site excludes them.
+
+### Hood Canal, Washington
+
+Page: https://bioluminescentkayaking.us/washington/hood-canal/
+Organism: Noctiluca scintillans and other dinoflagellates; summer season (baseline source: Sea Quest Kayak Tours, San Juan Island, checked 2026-11-13). Hood Canal has no GetYourGuide listings. The site covers one direct operator, Hood Canal Adventures, at $125 per person as listed by the operator, and tells readers to confirm before travelling.
+
+## Frequently asked questions (from the site's pages)
+
+### What is bioluminescence?
+A chemical reaction inside microscopic plankton (dinoflagellates) and, in Florida's winter, comb jellies. When the water moves — a paddle stroke, a hand, a fish — the organisms flash blue-green light to startle predators. The glow is only visible in real darkness, which is why moon phase decides most trips.
+
+### When is the best time to go?
+Around the new moon, in the location's peak season: Florida's Indian River Lagoon peaks July–August for dinoflagellates; Puerto Rico's bays glow year-round with the darkest, driest months strongest; Tomales Bay's window is roughly August–October; Washington's Salish Sea peaks June–September. The site's Moon Phase Calendar (https://bioluminescentkayaking.us/moon-phase-calendar/) lists the dark windows for the next 12 months.
+
+### Can you swim in the glow?
+Only at La Parguera, Puerto Rico. Swimming is not allowed in Mosquito Bay (the bay is protected, and sunscreen and skin oils harm the organisms) or Laguna Grande.
+
+### Is Mosquito Bay really the brightest in the world?
+Its Pyrodinium bahamense density holds a Guinness record, which is the basis for the claim. On any given night, moonlight and weather matter as much as the bay: a dark, calm night at Laguna Grande can out-glow a moonlit night at Mosquito Bay.
+
+### How does the site make money?
+Booking links go to GetYourGuide with the site's partner ID. If a reader books, GetYourGuide pays the site a commission; the price the reader pays is the same as booking direct. Full disclosure: https://bioluminescentkayaking.us/affiliate-disclosure/
+
+## About
+
+BioluminescentKayaking.us is run by Harsha Zoysa (founder and editor). Contact: hello@bioluminescentkayaking.us. The site's concise link index for AI systems is at https://bioluminescentkayaking.us/llms.txt

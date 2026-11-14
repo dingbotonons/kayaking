@@ -1,0 +1,61 @@
+# BioluminescentKayaking.us
+
+> Independent guide to bioluminescent kayaking in the USA. It compares tours in Florida, Puerto Rico, California and Washington State, and publishes a nightly Glow Forecast for 12 bays and lagoons. The site does not run tours. Bookings are made through GetYourGuide; the site may earn a commission, which never changes the price the reader pays.
+
+Site facts: Prices shown are GetYourGuide prices checked on 12 Nov 2026 and are restated with that check date wherever they appear. Tour ratings and review counts are GetYourGuide's own figures, labelled as such, and are never presented as the site's own ratings. The site covers four regions: Florida (Indian River Lagoon), Puerto Rico (three bioluminescent bays), California (Tomales Bay and San Diego) and Washington (San Juan Islands and Hood Canal).
+
+Glow Forecast data sources: The nightly score out of 100 is an estimate, labelled "Glow estimate" wherever it appears. No live bioluminescence measurement exists for any bay, so the score combines four sourced inputs: season baseline (up to 40 points, from published operator and researcher season guides for each bay, named in the site's data), moon darkness during tour hours 19:00–24:00 local (up to 30 points, calculated with the SunCalc astronomy library; moonlight counts only while the moon is above the horizon), cloud cover (up to 15 points, Open-Meteo forecast), and wind (up to 15 points, Open-Meteo forecast). Heavy rain (more than 25mm in the previous 48 hours) caps the score at 60 for Florida and Puerto Rico locations only. Water temperatures, where shown, are live observations from NOAA Tides and Currents stations; stations near the Florida and Puerto Rico bays do not report water temperature, so none is shown there. San Diego never receives a score because its glow comes from unpredictable red tides. Full method: https://bioluminescentkayaking.us/glow-forecast-method/
+
+## Start here
+
+- [Best Bioluminescent Kayaking Tours](https://bioluminescentkayaking.us/best-bioluminescent-kayaking-tours/): The site's comparison page — quick picks, detailed picks for the three highest-rated tours, and picks by trip type. Prices checked 12 Nov 2026.
+- [Glow Forecast](https://bioluminescentkayaking.us/glow-forecast/): Tonight's glow estimate for all 12 locations, with the moon, cloud, wind and season inputs shown for each.
+- [Destinations](https://bioluminescentkayaking.us/destinations/): All four regions and 12 locations in one place, with tonight's glow estimate for each location.
+- [Moon Phase Calendar](https://bioluminescentkayaking.us/moon-phase-calendar/): A 12-month calendar of dark-sky windows for planning a trip around the new moon.
+- [Pricing Data](https://bioluminescentkayaking.us/pricing.md): Machine-readable pricing directory for tours across Florida, Puerto Rico and Washington. Checked November 2026.
+
+## Florida
+
+- [Florida region page](https://bioluminescentkayaking.us/florida/): Bioluminescent kayaking in the Indian River Lagoon — Cocoa Beach, Titusville and the Orlando day-trip option compared.
+- [Cocoa Beach](https://bioluminescentkayaking.us/florida/cocoa-beach/): The main Florida location — dinoflagellate glow in summer, comb jellies in winter, clear-kayak tours from $64.20.
+- [Titusville](https://bioluminescentkayaking.us/florida/titusville/): Haulover Canal and Merritt Island refuge waters; one verified GetYourGuide listing at $119.
+- [Near Orlando](https://bioluminescentkayaking.us/florida/bioluminescent-kayaking-near-orlando/): The same lagoon trips framed as an evening trip from Orlando, about an hour's drive.
+
+## Puerto Rico
+
+- [Puerto Rico region page](https://bioluminescentkayaking.us/puerto-rico/): The island's three bio bays compared — brightness, swimming rules, and getting there.
+- [Mosquito Bay, Vieques](https://bioluminescentkayaking.us/puerto-rico/mosquito-bay-vieques/): The brightest bay, Pyrodinium bahamense at Guinness-record density; no swimming; tours from $55.
+- [Laguna Grande, Fajardo](https://bioluminescentkayaking.us/puerto-rico/laguna-grande-fajardo/): The easiest bay to reach, through a mangrove canal; tours from $65.78.
+- [La Parguera](https://bioluminescentkayaking.us/puerto-rico/la-parguera/): The gentlest of the three bays and the only one where swimming in the glow is allowed; tours from $60.
+- [Bio bay tours from San Juan](https://bioluminescentkayaking.us/puerto-rico/bio-bay-tours-from-san-juan/): Which bays are realistic as a trip from San Juan, with transfer-inclusive tours.
+
+## California
+
+- [California region page](https://bioluminescentkayaking.us/california/): Tomales Bay's seasonal dinoflagellate glow and San Diego's unpredictable red tides, honestly separated.
+- [Tomales Bay](https://bioluminescentkayaking.us/california/tomales-bay/): Point Reyes glow, roughly August to October. No standalone GetYourGuide kayak tour exists, so the page explains booking direct with local operators.
+- [San Diego](https://bioluminescentkayaking.us/california/san-diego/): Red-tide glow that cannot be forecast or booked around; this page carries no glow score and no tour cards.
+
+## Washington
+
+- [Washington region page](https://bioluminescentkayaking.us/washington/): Summer Noctiluca glow in the Salish Sea — San Juan Island, Orcas Island and Hood Canal.
+- [San Juan Island](https://bioluminescentkayaking.us/washington/san-juan-island/): Friday Harbor departures, June to September season; tours from $179.
+- [Orcas Island](https://bioluminescentkayaking.us/washington/orcas-island/): Glow tours from Orcas with the same summer season.
+- [Hood Canal](https://bioluminescentkayaking.us/washington/hood-canal/): No GetYourGuide listings; the page covers the direct operator Hood Canal Adventures ($125, confirm before you travel).
+
+## How the site works
+
+- [How our glow forecast works](https://bioluminescentkayaking.us/glow-forecast-method/): The full scoring method, its four data sources, and what the forecast cannot know.
+- [How we rank tours](https://bioluminescentkayaking.us/how-we-rank-tours/): The four ranking criteria — glow strength of the water, the kayak experience, launch logistics, and price and booking terms.
+- [About](https://bioluminescentkayaking.us/about/): Who runs the site (Harsha Zoysa, founder and editor) and how it is funded.
+- [Affiliate disclosure](https://bioluminescentkayaking.us/affiliate-disclosure/): How the GetYourGuide commission works and why it does not change prices.
+
+## Optional
+
+- [Guides Hub](https://bioluminescentkayaking.us/guides/): Background reading on the science, the moon and practical preparation.
+  - [What is bioluminescence?](https://bioluminescentkayaking.us/guides/what-is-bioluminescence/): Luciferin-luciferase reaction, marine dinoflagellates, and why sheltered bays glow brightest.
+  - [Dinoflagellates vs comb jellies](https://bioluminescentkayaking.us/guides/dinoflagellates-vs-comb-jellies/): Florida's summer blue sparkle vs winter rainbow comb jellies compared.
+  - [Moon phase & bioluminescence](https://bioluminescentkayaking.us/guides/moon-phase-and-bioluminescence/): New-moon dark windows, how moonset saves a trip, and cloud cover impact.
+- [Contact](https://bioluminescentkayaking.us/contact/): Email the site at hello@bioluminescentkayaking.us.
+- [Privacy policy](https://bioluminescentkayaking.us/privacy-policy/): What data the site collects and why.
+- [Terms](https://bioluminescentkayaking.us/terms/): Terms of use in plain English.
+- [Image credits](https://bioluminescentkayaking.us/image-credits/): Every photograph on the site, where it appears, and its source.

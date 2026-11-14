@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #0E6E6B;
+  --color-seafoam: #EAF6F3;
+  --color-coral: #FF8C66;
+  --color-coral-hover: #F07A52;
+  --color-gold: #F2B544;
+  --color-cream: #FFF9F0;
+  --color-ink: #24404D;
+  --color-ink-muted: #4A6163;
+  --color-border-soft: #E5EFEF;
+  --color-seafoam-border: #D5EAE5;
+  --color-cream-border: #F2E8DC;
+
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-nunito-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #24404D;
+  --teal: #0E6E6B;
+  --seafoam: #EAF6F3;
+  --coral: #FF8C66;
+  --gold: #F2B544;
+  --cream: #FFF9F0;
+  --ink: #24404D;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+}
+
+.custom-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px -2px rgba(14, 110, 107, 0.08), 0 2px 6px -1px rgba(14, 110, 107, 0.04);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-card:hover {
+  box-shadow: 0 12px 28px -4px rgba(14, 110, 107, 0.12), 0 4px 10px -2px rgba(14, 110, 107, 0.06);
+  transform: translateY(-2px);
+}
+
+@keyframes heroEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-enter {
+  animation: heroEnter 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-enter-stagger-1 {
+  animation: heroEnter 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.hero-enter-stagger-2 {
+  animation: heroEnter 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter,
+  .hero-enter-stagger-1,
+  .hero-enter-stagger-2,
+  .custom-card {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
