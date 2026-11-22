@@ -211,4 +211,9 @@ export const IMAGE_CREDITS: ImageCredit[] = [
       "Tour cards across the site",
     ],
   },
+  {
+    src: "/images/guides/what-is-bioluminescence.webp",
+    appearsOn: ["Guide: What is bioluminescence? (featured image)"],
+    note: "Illustration created for BioluminescentKayaking.us",
+  },
 ];

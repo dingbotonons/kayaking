@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* Trailing slash is the site's canonical URL form: sitemap,
+     canonical tags and every internal link already use it. This makes
+     the server serve /florida/ as the 200 page and redirect /florida
+     to it, instead of the other way round. */
+  trailingSlash: false,
   experimental: {
     agentFeedback: true,
   },

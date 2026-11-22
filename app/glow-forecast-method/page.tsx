@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "The math behind our 0–100 nightly glow score: SunCalc lunar darkness, Open-Meteo cloud cover & wind, NOAA water readings, and biological season baselines.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/glow-forecast-method/",
+    canonical: "https://bioluminescentkayaking.us/glow-forecast-method",
   },
   openGraph: {
     title: "How Our Glow Forecast Works: Moon, Weather & Season Formula",
     description:
       "The math behind our 0–100 nightly glow score: SunCalc lunar darkness, Open-Meteo cloud cover & wind, NOAA water readings, and biological season baselines.",
-    url: "https://bioluminescentkayaking.us/glow-forecast-method/",
+    url: "https://bioluminescentkayaking.us/glow-forecast-method",
     siteName: "BioluminescentKayaking.us",
     type: "website",
     images: [
@@ -36,7 +36,7 @@ export default function GlowForecastMethodPage() {
     name: "How Our Glow Forecast Works",
     description:
       "How our glow forecast works: the moon, clouds, wind and season behind every score — and why a forecast is an estimate, not a guarantee.",
-    url: "https://bioluminescentkayaking.us/glow-forecast-method/",
+    url: "https://bioluminescentkayaking.us/glow-forecast-method",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [

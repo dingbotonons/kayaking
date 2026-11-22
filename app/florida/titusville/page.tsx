@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description:
     "Paddle Florida's darkest refuge waters at Haulover Canal & Mosquito Lagoon. Verified clear kayak tours from $119, tonight's glow score, and Cocoa Beach comparison.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/florida/titusville/",
+    canonical: "https://bioluminescentkayaking.us/florida/titusville",
   },
   openGraph: {
     title: "Titusville Bioluminescent Kayaking: Haulover Canal Tours",
     description:
       "Paddle Florida's darkest refuge waters at Haulover Canal & Mosquito Lagoon. Verified clear kayak tours from $119, tonight's glow score, and Cocoa Beach comparison.",
-    url: "https://bioluminescentkayaking.us/florida/titusville/",
+    url: "https://bioluminescentkayaking.us/florida/titusville",
     siteName: "BioluminescentKayaking.us",
     images: [
       {

@@ -13,13 +13,13 @@ export const metadata: Metadata = {
   description:
     "Kayak through the magical mangrove channel into Laguna Grande from $65.78. Just 1 hour from San Juan! Check tonight's glow score and how it compares to Vieques.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/puerto-rico/laguna-grande-fajardo/",
+    canonical: "https://bioluminescentkayaking.us/puerto-rico/laguna-grande-fajardo",
   },
   openGraph: {
     title: "Laguna Grande Fajardo Bioluminescent Kayaking: Mangrove Tours",
     description:
       "Kayak through the magical mangrove channel into Laguna Grande from $65.78. Just 1 hour from San Juan! Check tonight's glow score and how it compares to Vieques.",
-    url: "https://bioluminescentkayaking.us/puerto-rico/laguna-grande-fajardo/",
+    url: "https://bioluminescentkayaking.us/puerto-rico/laguna-grande-fajardo",
     siteName: "BioluminescentKayaking.us",
     type: "website",
     images: [
@@ -67,7 +67,7 @@ export default function LagunaGrandePage() {
         name: "Laguna Grande Bioluminescent Bay",
         description:
           "Bioluminescent lagoon in Fajardo, Puerto Rico, renowned for its glowing dinoflagellates and guided night kayak trips through red mangrove tunnels.",
-        url: "https://bioluminescentkayaking.us/puerto-rico/laguna-grande-fajardo/",
+        url: "https://bioluminescentkayaking.us/puerto-rico/laguna-grande-fajardo",
         image:
           "https://lh3.googleusercontent.com/aida/ALJJyrCv5tzo7sRGWHQByEw2Rc_HE7kYI9Z9U4v1HQUazODKXVyWkNByETsYp6SU8lBVD9nxoHIONmCSDgsoHhQwh-t2D1aFnWYpXCObJlO5mtoSQ17DHKAIjX2KCb9aBwmTAA7WG0NI-FRGcEmalmqnRhrOd5FM5JA5pavso-NFeM9-Tu4Mbv8idTyhbbJ4O5984OM1rMwkbjFXi3bef_vSDsgRGZAaXWl6EorO4VmE5NLCvGH06H4rNL6zpy4",
         isAccessibleForFree: false,

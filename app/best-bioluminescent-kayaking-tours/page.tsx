@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   description:
     "Top-rated bioluminescent kayak tours compared across Florida, Puerto Rico & WA. Unbiased rankings, clear-hull kayak picks, and verified prices from $55 to $226.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/best-bioluminescent-kayaking-tours/",
+    canonical: "https://bioluminescentkayaking.us/best-bioluminescent-kayaking-tours",
   },
   openGraph: {
     title: "10 Best Bioluminescent Kayaking Tours in the USA (Ranked)",
     description:
       "Top-rated bioluminescent kayak tours compared across Florida, Puerto Rico & WA. Unbiased rankings, clear-hull kayak picks, and verified prices from $55 to $226.",
-    url: "https://bioluminescentkayaking.us/best-bioluminescent-kayaking-tours/",
+    url: "https://bioluminescentkayaking.us/best-bioluminescent-kayaking-tours",
     siteName: "BioluminescentKayaking.us",
     type: "website",
     images: [

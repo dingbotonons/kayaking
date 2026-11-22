@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description:
     "No rental car required! Compare top bioluminescent tours from San Juan to Laguna Grande & Vieques. Hotel pickups, return times, and checked prices from $65.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/puerto-rico/bio-bay-tours-from-san-juan/",
+    canonical: "https://bioluminescentkayaking.us/puerto-rico/bio-bay-tours-from-san-juan",
   },
   openGraph: {
     title: "Bio Bay Tours from San Juan: Hotel Pickup & Transport Included",
     description:
       "No rental car required! Compare top bioluminescent tours from San Juan to Laguna Grande & Vieques. Hotel pickups, return times, and checked prices from $65.",
-    url: "https://bioluminescentkayaking.us/puerto-rico/bio-bay-tours-from-san-juan/",
+    url: "https://bioluminescentkayaking.us/puerto-rico/bio-bay-tours-from-san-juan",
     siteName: "BioluminescentKayaking.us",
     type: "website",
     images: [

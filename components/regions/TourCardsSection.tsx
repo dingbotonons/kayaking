@@ -19,6 +19,9 @@ export function TourCardsSection({
   seasonNote,
   variant = "location",
   bg = "seafoam",
+  sectionVariant = "standard",
+  className = "",
+  showDisclosure = true,
 }: {
   tourIds: string[];
   title: string;
@@ -26,6 +29,9 @@ export function TourCardsSection({
   seasonNote?: string;
   variant?: "hub" | "location";
   bg?: "white" | "seafoam";
+  sectionVariant?: "standard" | "hero" | "cta" | "compact";
+  className?: string;
+  showDisclosure?: boolean;
 }) {
   const picks: Tour[] = tourIds
     .map((id) => getTourById(id))
@@ -34,18 +40,20 @@ export function TourCardsSection({
   if (picks.length === 0) return null;
 
   return (
-    <Section bg={bg} id="tours">
+    <Section bg={bg} variant={sectionVariant} className={className} id="tours">
       <Container>
         {/* Disclosure line strictly placed above the cards */}
-        <div className="mb-6 text-xs text-ink/70 flex items-center justify-center text-center font-sans">
-          <span>
-            Prices and availability come from GetYourGuide. We may earn a
-            commission — it never changes the price you pay.
-          </span>
-        </div>
+        {showDisclosure && (
+          <div className="mb-6 text-xs text-ink/70 flex items-center justify-center text-center font-sans">
+            <span>
+              Prices and availability come from GetYourGuide. We may earn a
+              commission — it never changes the price you pay.
+            </span>
+          </div>
+        )}
 
         <SectionHeader
-          eyebrow={`Prices checked ${PRICE_CHECKED_DATE}`}
+          eyebrow={showDisclosure ? `Prices checked ${PRICE_CHECKED_DATE}` : undefined}
           title={title}
           intro={intro}
           align="center"

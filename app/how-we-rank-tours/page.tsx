@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Unbiased ranking methodology: glow intensity, boat experience (clear kayaks), launch logistics, and checked pricing. Zero paid placements or sponsored ranks.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/how-we-rank-tours/",
+    canonical: "https://bioluminescentkayaking.us/how-we-rank-tours",
   },
   openGraph: {
     title: "How We Rank Bioluminescent Kayak Tours: 4 Editorial Criteria",
     description:
       "Unbiased ranking methodology: glow intensity, boat experience (clear kayaks), launch logistics, and checked pricing. Zero paid placements or sponsored ranks.",
-    url: "https://bioluminescentkayaking.us/how-we-rank-tours/",
+    url: "https://bioluminescentkayaking.us/how-we-rank-tours",
     siteName: "BioluminescentKayaking.us",
     type: "website",
   },
@@ -28,7 +28,7 @@ export default function HowWeRankToursPage() {
     name: "How We Rank Tours",
     description:
       "How we rank bioluminescent kayaking tours: glow strength, the kayak experience, launch logistics, and price and booking terms — and why ranking is never paid.",
-    url: "https://bioluminescentkayaking.us/how-we-rank-tours/",
+    url: "https://bioluminescentkayaking.us/how-we-rank-tours",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [

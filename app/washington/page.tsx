@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   title: region.metaTitle,
   description: region.metaDescription,
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/washington/",
+    canonical: "https://bioluminescentkayaking.us/washington",
   },
   openGraph: {
     title: region.metaTitle,
     description: region.metaDescription,
-    url: "https://bioluminescentkayaking.us/washington/",
+    url: "https://bioluminescentkayaking.us/washington",
     siteName: "BioluminescentKayaking.us",
     images: [
       {

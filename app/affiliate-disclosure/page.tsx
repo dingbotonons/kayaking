@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Complete affiliate disclosure: how we partner with GetYourGuide, why readers pay identical rates, and how our 0–100 glow scores remain 100% editorial.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/affiliate-disclosure/",
+    canonical: "https://bioluminescentkayaking.us/affiliate-disclosure",
   },
   openGraph: {
     title: "Affiliate Disclosure & Transparency: How We Stay Unbiased",
     description:
       "Complete affiliate disclosure: how we partner with GetYourGuide, why readers pay identical rates, and how our 0–100 glow scores remain 100% editorial.",
-    url: "https://bioluminescentkayaking.us/affiliate-disclosure/",
+    url: "https://bioluminescentkayaking.us/affiliate-disclosure",
     siteName: "BioluminescentKayaking.us",
     type: "website",
   },
@@ -28,7 +28,7 @@ export default function AffiliateDisclosurePage() {
     name: "Affiliate Disclosure",
     description:
       "We compare tours from GetYourGuide and may earn a commission — it never changes the price you pay.",
-    url: "https://bioluminescentkayaking.us/affiliate-disclosure/",
+    url: "https://bioluminescentkayaking.us/affiliate-disclosure",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [

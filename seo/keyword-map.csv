@@ -1,0 +1,37 @@
+query,intent,monthly_volume_est,difficulty_est,target_url,status,current_position,last_checked
+bioluminescent kayaking,navigational/transactional,18000,high,/destinations,live,unknown,2026-11-23
+bioluminescent kayaking tours,transactional,12000,high,/best-bioluminescent-kayaking-tours,live,unknown,2026-11-23
+best bioluminescent kayaking tours,transactional,8000,high,/best-bioluminescent-kayaking-tours,live,unknown,2026-11-23
+bioluminescent kayaking florida,transactional,6500,medium,/florida,live,unknown,2026-11-23
+bioluminescent kayaking cocoa beach,transactional,4400,medium,/florida/cocoa-beach,live,unknown,2026-11-23
+bioluminescent kayaking near orlando,transactional,3600,medium,/florida/bioluminescent-kayaking-near-orlando,live,unknown,2026-11-23
+bioluminescent kayaking titusville florida,transactional,1900,low,/florida/titusville,live,unknown,2026-11-23
+mosquito bay vieques tour,transactional,5400,medium,/puerto-rico/mosquito-bay-vieques,live,unknown,2026-11-23
+bioluminescent bay puerto rico,transactional,8100,medium,/puerto-rico,live,unknown,2026-11-23
+laguna grande fajardo kayak,transactional,2900,medium,/puerto-rico/laguna-grande-fajardo,live,unknown,2026-11-23
+la parguera bioluminescent,transactional,1600,low,/puerto-rico/la-parguera,live,unknown,2026-11-23
+bio bay tours from san juan,transactional,2200,medium,/puerto-rico/bio-bay-tours-from-san-juan,live,unknown,2026-11-23
+bioluminescent kayaking california,transactional,2100,medium,/california,live,unknown,2026-11-23
+tomales bay kayaking bioluminescence,transactional,1400,low,/california/tomales-bay,live,unknown,2026-11-23
+san diego bioluminescence kayaking,transactional,1800,low,/california/san-diego,live,unknown,2026-11-23
+bioluminescent kayaking washington state,transactional,1200,low,/washington,live,unknown,2026-11-23
+san juan island bioluminescent kayak,transactional,900,low,/washington/san-juan-island,live,unknown,2026-11-23
+hood canal bioluminescence,informational,700,low,/washington/hood-canal,live,unknown,2026-11-23
+glow forecast bioluminescence,informational,600,low,/glow-forecast,live,unknown,2026-11-23
+bioluminescent bay tonight forecast,informational,500,low,/glow-forecast,live,unknown,2026-11-23
+moon phase kayaking bioluminescence,informational,1100,low,/moon-phase-calendar,live,unknown,2026-11-23
+what is bioluminescence,informational,27000,very-high,/guides/what-is-bioluminescence,live,unknown,2026-11-23
+how does bioluminescence work,informational,9000,high,/guides/what-is-bioluminescence,live,unknown,2026-11-23
+dinoflagellates vs comb jellies,informational,800,low,/guides/dinoflagellates-vs-comb-jellies,live,unknown,2026-11-23
+best time to see bioluminescence,informational,3400,medium,/guides/best-time-to-see-bioluminescence,live,unknown,2026-11-23
+moon phase and bioluminescence,informational,2100,medium,/guides/moon-phase-and-bioluminescence,live,unknown,2026-11-23
+what to wear kayaking at night,informational,1800,medium,/guides/what-to-wear-and-bring,live,unknown,2026-11-23
+is bioluminescent kayaking safe,informational,1200,low,/guides/is-bioluminescent-kayaking-safe,live,unknown,2026-11-23
+clear kayak vs regular kayak,informational,900,low,/guides/clear-kayak-vs-regular-kayak,live,unknown,2026-11-23
+bioluminescent kayaking with kids,informational,1500,low,/guides/bioluminescent-kayaking-with-kids,live,unknown,2026-11-23
+best time to visit mosquito bay,informational,2800,medium,gap,,unknown,2026-11-23
+bioluminescent kayaking how to photograph,informational,1100,low,/guides/how-to-photograph-bioluminescence,live,unknown,2026-11-23
+can you swim in bioluminescent water,informational,900,low,/guides/can-you-swim-in-bioluminescent-water,live,unknown,2026-11-23
+bioluminescent kayaking reviews,transactional,2200,high,/best-bioluminescent-kayaking-tours,live,unknown,2026-11-23
+how we rank tours bioluminescent,navigational,200,low,/how-we-rank-tours,live,unknown,2026-11-23
+bioluminescent kayaking glow forecast method,informational,150,low,/glow-forecast-method,live,unknown,2026-11-23

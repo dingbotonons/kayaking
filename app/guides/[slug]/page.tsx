@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/home/Header";
 import { Footer } from "@/components/home/Footer";
+import { TourCardsSection } from "@/components/regions/TourCardsSection";
 import { AuthorByline } from "@/components/about/AuthorByline";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { ChevronRight } from "@/components/ui/Icons";
 import { AUTHOR } from "@/src/data/author";
 import { getGuideBySlug, getPublishedGuides, guideHref } from "@/src/data/guides";
+import { renderGuideMdx } from "@/lib/mdx";
 
 export function generateStaticParams() {
   return getPublishedGuides().map((guide) => ({
@@ -16,20 +19,6 @@ export function generateStaticParams() {
   }));
 }
 
-/**
- * Guide article route. Renders only guides whose status is
- * "published" in src/data/guides.ts; planned and unknown slugs
- * return notFound(). Articles are written in a later phase — today
- * every guide is planned, so this route 404s by design while the
- * /guides/ hub shows the cards as "In the works" without links.
- *
- * No generateStaticParams: with Cache Components enabled, Next 16
- * requires it to return at least one result, and there are no
- * published guides yet. The route resolves params at request time;
- * add generateStaticParams back when the first guide is published.
- * `instant = false` marks the segment as a blocking (non-instant)
- * route, which is what a params-driven article page is.
- */
 export const instant = false;
 
 export async function generateMetadata({
@@ -40,18 +29,43 @@ export async function generateMetadata({
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
   if (!guide || guide.status !== "published") return {};
+
+  const title = guide.title;
+  const description = guide.metaDescription || guide.excerpt;
+  const canonicalUrl = `https://bioluminescentkayaking.us${guideHref(guide)}`;
+  const imageUrl = guide.featuredImage
+    ? `https://bioluminescentkayaking.us${guide.featuredImage}`
+    : "https://bioluminescentkayaking.us/images/hero.webp";
+  const imageAlt = guide.featuredImageAlt || guide.title;
+
   return {
-    title: `${guide.title}`,
-    description: guide.excerpt,
+    title,
+    description,
     alternates: {
-      canonical: `https://bioluminescentkayaking.us${guideHref(guide)}`,
+      canonical: canonicalUrl,
     },
     openGraph: {
-      title: `${guide.title}`,
-      description: guide.excerpt,
-      url: `https://bioluminescentkayaking.us${guideHref(guide)}`,
+      title,
+      description,
+      url: canonicalUrl,
       siteName: "BioluminescentKayaking.us",
       type: "article",
+      ...(guide.datePublished ? { publishedTime: guide.datePublished } : {}),
+      authors: [guide.author || AUTHOR.name],
+      images: [
+        {
+          url: imageUrl,
+          alt: imageAlt,
+          width: 1200,
+          height: 800,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [imageUrl],
     },
   };
 }
@@ -66,6 +80,12 @@ export default async function GuideArticlePage({
   if (!guide || guide.status !== "published") {
     notFound();
   }
+
+  const mdxContent = await renderGuideMdx(guide.content);
+  const guideUrl = `https://bioluminescentkayaking.us${guideHref(guide)}`;
+  const guideImage = guide.featuredImage
+    ? `https://bioluminescentkayaking.us${guide.featuredImage}`
+    : "https://bioluminescentkayaking.us/images/hero.webp";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -83,25 +103,40 @@ export default async function GuideArticlePage({
             "@type": "ListItem",
             position: 2,
             name: "Guides",
-            item: "https://bioluminescentkayaking.us/guides/",
+            item: "https://bioluminescentkayaking.us/guides",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: guide.title,
-            item: `https://bioluminescentkayaking.us${guideHref(guide)}`,
+            item: guideUrl,
           },
         ],
       },
       {
         "@type": "Article",
         headline: guide.title,
-        description: guide.excerpt,
-        url: `https://bioluminescentkayaking.us${guideHref(guide)}`,
+        description: guide.metaDescription || guide.excerpt,
+        url: guideUrl,
+        image: [guideImage],
+        ...(guide.datePublished ? { datePublished: guide.datePublished, dateModified: guide.datePublished } : {}),
         author: {
           "@type": "Person",
-          name: AUTHOR.name,
+          name: guide.author || AUTHOR.name,
           url: AUTHOR.linkedinUrl,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "BioluminescentKayaking.us",
+          url: "https://bioluminescentkayaking.us/",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://bioluminescentkayaking.us/logo.png",
+          },
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": guideUrl,
         },
       },
     ],
@@ -116,8 +151,9 @@ export default async function GuideArticlePage({
       <div className="min-h-screen flex flex-col bg-white text-ink">
         <Header />
         <main className="flex-1">
-          <Section bg="white" variant="hero" className="border-b border-seafoam">
-            <Container size="readable">
+          {/* Hero Section */}
+          <Section bg="white" variant="compact" className="border-b border-seafoam pt-8 pb-8 lg:pt-12 lg:pb-12">
+            <Container>
               <nav aria-label="Breadcrumb" className="mb-6">
                 <ol className="flex items-center space-x-2 text-xs font-semibold text-ink/70">
                   <li>
@@ -128,7 +164,7 @@ export default async function GuideArticlePage({
                   <ChevronRight className="w-3.5 h-3.5 text-ink/40" />
                   <li>
                     <Link
-                      href="/guides/"
+                      href="/guides"
                       className="hover:text-teal transition-colors"
                     >
                       Guides
@@ -141,64 +177,86 @@ export default async function GuideArticlePage({
                 </ol>
               </nav>
 
-              <span className="inline-flex items-center px-3 h-7 rounded-full bg-seafoam text-teal text-xs font-bold uppercase tracking-wider mb-4 border border-teal/15">
-                {guide.clusterLabel}
-              </span>
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                <div className="lg:col-span-7 flex flex-col justify-center">
+                  <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-ink tracking-tight leading-tight mb-4">
+                    {guide.title}
+                  </h1>
 
-              <h1 className="font-serif text-4xl lg:text-5xl font-bold text-ink tracking-tight leading-tight mb-4">
-                {guide.title}
-              </h1>
+                  <p className="text-base sm:text-lg leading-relaxed text-ink/80 max-w-2xl mb-6 font-sans">
+                    {guide.excerpt}
+                  </p>
 
-              <p className="text-base leading-7 text-ink/80 max-w-2xl mb-8 font-sans">
-                {guide.excerpt}
-              </p>
+                  <AuthorByline />
+                </div>
 
-              <AuthorByline />
+                {guide.featuredImage && (
+                  <div className="lg:col-span-5">
+                    <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] w-full overflow-hidden rounded-xl shadow-md border border-teal/15">
+                      <Image
+                        src={guide.featuredImage}
+                        alt={guide.featuredImageAlt ?? guide.title}
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 480px"
+                        className="object-cover"
+                        unoptimized
+                        priority
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
             </Container>
           </Section>
 
-          <Section bg="seafoam">
+          {/* Article MDX Body */}
+          <Section bg="seafoam" variant="compact" className="py-8 lg:py-12">
             <Container size="readable">
-              <div className="space-y-6">
-                {(guide.body ?? []).map((paragraph, idx) => (
-                  <p
-                    key={idx}
-                    className={
-                      idx === 0
-                        ? "text-lg leading-8 text-ink font-medium border-l-4 border-teal pl-5 py-2 bg-white/70 rounded-r-xl shadow-xs font-sans"
-                        : "text-base leading-7 text-ink/80 font-sans"
-                    }
-                  >
-                    {paragraph}
-                  </p>
-                ))}
+              {/* MDX rendered content */}
+              <div className="prose-guide">
+                {mdxContent}
               </div>
 
-              <div className="mt-12 pt-8 border-t border-teal/15">
+              <div className="mt-8 pt-6 border-t border-teal/15">
                 <AuthorByline />
               </div>
             </Container>
           </Section>
 
-          <Section variant="cta" bg="white">
+          {/* Related Tours CTA Section */}
+          {guide.relatedTourIds && guide.relatedTourIds.length > 0 && (
+            <TourCardsSection
+              tourIds={guide.relatedTourIds}
+              title="See it yourself"
+              intro="The science is better in person. Three well-placed tours for a first glowing night, with checked prices from GetYourGuide."
+              variant="hub"
+              bg="white"
+              sectionVariant="compact"
+              showDisclosure={false}
+              className="py-10 lg:py-14"
+            />
+          )}
+
+          {/* Planning CTA Band */}
+          <Section variant="compact" bg="white" className="pt-0 lg:pt-0 pb-12 lg:pb-16">
             <Container size="readable">
-              <div className="bg-gradient-to-r from-teal to-[#164e63] text-white rounded-[20px] p-8 lg:p-12 text-center shadow-md">
-                <h2 className="font-serif text-3xl lg:text-4xl font-bold mb-3">
+              <div className="bg-gradient-to-r from-teal to-[#164e63] text-white rounded-[20px] p-6 sm:p-8 lg:p-10 text-center shadow-md">
+                <h2 className="font-serif text-2xl lg:text-3xl font-bold mb-3">
                   Planning a trip now?
                 </h2>
-                <p className="text-white/85 text-base max-w-xl mx-auto mb-8 leading-relaxed font-sans">
+                <p className="text-white/85 text-base max-w-xl mx-auto mb-6 leading-relaxed font-sans">
                   Check tonight&apos;s glow estimate and the dark-moon windows
                   for your dates.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Link
-                    href="/glow-forecast/"
+                    href="/glow-forecast"
                     className="w-full sm:w-auto inline-flex items-center justify-center h-12 px-6 rounded-full bg-coral hover:bg-[#ff7b52] text-white font-bold text-sm shadow-sm transition-colors duration-200"
                   >
                     See tonight&apos;s glow forecast
                   </Link>
                   <Link
-                    href="/moon-phase-calendar/"
+                    href="/moon-phase-calendar"
                     className="w-full sm:w-auto inline-flex items-center justify-center h-12 px-6 rounded-full bg-white text-teal hover:bg-seafoam font-bold text-sm shadow-sm transition-colors duration-200"
                   >
                     Open the moon calendar

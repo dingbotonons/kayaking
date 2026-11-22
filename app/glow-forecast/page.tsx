@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   description:
     "Will it glow tonight? Real-time 0–100 bioluminescent kayak forecast for FL, PR, CA & WA. Live moon darkness, cloud cover, wind, and season ratings.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/glow-forecast/",
+    canonical: "https://bioluminescentkayaking.us/glow-forecast",
   },
   openGraph: {
     title: "Tonight's Bioluminescence Forecast (0–100 Glow Score) | 12 Bays",
     description:
       "Will it glow tonight? Real-time 0–100 bioluminescent kayak forecast for FL, PR, CA & WA. Live moon darkness, cloud cover, wind, and season ratings.",
-    url: "https://bioluminescentkayaking.us/glow-forecast/",
+    url: "https://bioluminescentkayaking.us/glow-forecast",
     siteName: "BioluminescentKayaking.us",
     locale: "en_US",
     type: "website",
@@ -71,7 +71,7 @@ export default async function GlowForecastPage() {
         name: "Bioluminescent Kayaking Glow Forecast",
         description:
           "Nightly glow estimates (0–100) for 12 bioluminescent kayaking locations in Florida, Puerto Rico, California and Washington, calculated from season baselines, SunCalc moon data and Open-Meteo cloud, wind and rainfall forecasts. An estimate, not a live bioluminescence measurement — no such measurement exists.",
-        url: "https://bioluminescentkayaking.us/glow-forecast/",
+        url: "https://bioluminescentkayaking.us/glow-forecast",
         creator: {
           "@type": "Organization",
           name: "BioluminescentKayaking.us",

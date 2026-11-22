@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description:
     "Only 45 minutes from Disney & Universal! Compare evening bioluminescence kayak tours from $75, drive times to Cocoa Beach/Titusville, and tonight's glow score.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/florida/bioluminescent-kayaking-near-orlando/",
+    canonical: "https://bioluminescentkayaking.us/florida/bioluminescent-kayaking-near-orlando",
   },
   openGraph: {
     title: "Bioluminescent Kayaking Near Orlando: 45-Min Day Trip Guide",
     description:
       "Only 45 minutes from Disney & Universal! Compare evening bioluminescence kayak tours from $75, drive times to Cocoa Beach/Titusville, and tonight's glow score.",
-    url: "https://bioluminescentkayaking.us/florida/bioluminescent-kayaking-near-orlando/",
+    url: "https://bioluminescentkayaking.us/florida/bioluminescent-kayaking-near-orlando",
     siteName: "BioluminescentKayaking.us",
     images: [
       {

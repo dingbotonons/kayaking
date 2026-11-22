@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   description:
     "Experience Florida's glowing waters in Cocoa Beach & Titusville. Compare clear kayak tours from $64.20, tonight's glow score, and summer sparkle vs winter jellies.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/florida/",
+    canonical: "https://bioluminescentkayaking.us/florida",
   },
   openGraph: {
     title: "Bioluminescent Kayaking in Florida: Space Coast Tour Guide",
     description:
       "Experience Florida's glowing waters in Cocoa Beach & Titusville. Compare clear kayak tours from $64.20, tonight's glow score, and summer sparkle vs winter jellies.",
-    url: "https://bioluminescentkayaking.us/florida/",
+    url: "https://bioluminescentkayaking.us/florida",
     siteName: "BioluminescentKayaking.us",
     images: [
       {

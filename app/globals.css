@@ -20,12 +20,56 @@
 :root {
   --background: #ffffff;
   --foreground: #24404D;
+  --card: #ffffff;
+  --card-foreground: #24404D;
+  --popover: #ffffff;
+  --popover-foreground: #24404D;
+  --primary: #0E6E6B;
+  --primary-foreground: #ffffff;
+  --secondary: #EAF6F3;
+  --secondary-foreground: #0E6E6B;
+  --muted: #EAF6F3;
+  --muted-foreground: #4A6163;
+  --accent: #EAF6F3;
+  --accent-foreground: #0E6E6B;
+  --destructive: #FF8C66;
+  --destructive-foreground: #ffffff;
+  --border: #D5EAE5;
+  --input: #D5EAE5;
+  --ring: #0E6E6B;
+  --radius: 1.25rem;
   --teal: #0E6E6B;
   --seafoam: #EAF6F3;
   --coral: #FF8C66;
   --gold: #F2B544;
   --cream: #FFF9F0;
   --ink: #24404D;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.animate-accordion-down {
+  animation: accordion-down 0.2s ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 0.2s ease-out;
 }
 
 body {

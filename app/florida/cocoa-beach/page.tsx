@@ -13,13 +13,13 @@ export const metadata: Metadata = {
   description:
     "Paddle Cocoa Beach's glowing Banana River! Compare clear-bottom kayak tours from $64.20, tonight's glow forecast, and summer dinos vs winter comb jellies.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/florida/cocoa-beach/",
+    canonical: "https://bioluminescentkayaking.us/florida/cocoa-beach",
   },
   openGraph: {
     title: "Cocoa Beach Bioluminescent Kayaking: Clear Kayak Tours & Glow",
     description:
       "Paddle Cocoa Beach's glowing Banana River! Compare clear-bottom kayak tours from $64.20, tonight's glow forecast, and summer dinos vs winter comb jellies.",
-    url: "https://bioluminescentkayaking.us/florida/cocoa-beach/",
+    url: "https://bioluminescentkayaking.us/florida/cocoa-beach",
     siteName: "BioluminescentKayaking.us",
     images: [
       {

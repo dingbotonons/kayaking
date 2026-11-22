@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Get in touch with editor Harsha Zoysa. Submit tour updates, water conditions, or editorial inquiries. For booking changes, contact GetYourGuide directly.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/contact/",
+    canonical: "https://bioluminescentkayaking.us/contact",
   },
   openGraph: {
     title: "Contact BioluminescentKayaking.us: Questions & Partnerships",
     description:
       "Get in touch with editor Harsha Zoysa. Submit tour updates, water conditions, or editorial inquiries. For booking changes, contact GetYourGuide directly.",
-    url: "https://bioluminescentkayaking.us/contact/",
+    url: "https://bioluminescentkayaking.us/contact",
     siteName: "BioluminescentKayaking.us",
     type: "website",
   },
@@ -29,7 +29,7 @@ export default function ContactPage() {
     name: "Contact Us",
     description:
       "Contact BioluminescentKayaking.us — corrections, questions and partnerships. For booking changes, contact GetYourGuide.",
-    url: "https://bioluminescentkayaking.us/contact/",
+    url: "https://bioluminescentkayaking.us/contact",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [

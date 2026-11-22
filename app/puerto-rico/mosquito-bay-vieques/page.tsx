@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description:
     "Paddle the Guinness-record brightest bio bay on Earth! Verified clear kayak tours from $55, tonight's glow score, ferry logistics, and why you must stay overnight.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/puerto-rico/mosquito-bay-vieques/",
+    canonical: "https://bioluminescentkayaking.us/puerto-rico/mosquito-bay-vieques",
   },
   openGraph: {
     title: "Mosquito Bay Vieques Bioluminescent Kayaking: World's Brightest",
     description:
       "Paddle the Guinness-record brightest bio bay on Earth! Verified clear kayak tours from $55, tonight's glow score, ferry logistics, and why you must stay overnight.",
-    url: "https://bioluminescentkayaking.us/puerto-rico/mosquito-bay-vieques/",
+    url: "https://bioluminescentkayaking.us/puerto-rico/mosquito-bay-vieques",
     siteName: "BioluminescentKayaking.us",
     images: [
       {

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Meet founder & editor Harsha Zoysa. Learn how we research 20+ USA bioluminescent kayak tours, calculate nightly 0–100 glow scores, and maintain independence.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/about/",
+    canonical: "https://bioluminescentkayaking.us/about",
   },
   openGraph: {
     title: "About BioluminescentKayaking.us: Independent Tour & Glow Guide",
     description:
       "Meet founder & editor Harsha Zoysa. Learn how we research 20+ USA bioluminescent kayak tours, calculate nightly 0–100 glow scores, and maintain independence.",
-    url: "https://bioluminescentkayaking.us/about/",
+    url: "https://bioluminescentkayaking.us/about",
     siteName: "BioluminescentKayaking.us",
     type: "website",
   },
@@ -28,7 +28,7 @@ export default function AboutPage() {
     name: "About BioluminescentKayaking.us",
     description:
       "An independent guide to bioluminescent kayaking in the USA — how we compare tours, check prices, and forecast the glow.",
-    url: "https://bioluminescentkayaking.us/about/",
+    url: "https://bioluminescentkayaking.us/about",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [

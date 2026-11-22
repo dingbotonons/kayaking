@@ -6,17 +6,17 @@ import { TermsSections } from "@/components/terms/TermsSections";
 import { TERMS_DATA } from "@/src/data/terms";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | BioluminescentKayaking.us",
+  title: "Terms of Service",
   description:
     "Terms of use for BioluminescentKayaking.us: conditions forecasting disclaimers, GetYourGuide booking terms, and intellectual property guidelines.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/terms/",
+    canonical: "https://bioluminescentkayaking.us/terms",
   },
   openGraph: {
-    title: "Terms of Service | BioluminescentKayaking.us",
+    title: "Terms of Service",
     description:
       "Terms of use for BioluminescentKayaking.us: conditions forecasting disclaimers, GetYourGuide booking terms, and intellectual property guidelines.",
-    url: "https://bioluminescentkayaking.us/terms/",
+    url: "https://bioluminescentkayaking.us/terms",
     siteName: "BioluminescentKayaking.us",
     type: "website",
   },
@@ -29,7 +29,7 @@ export default function TermsPage() {
     name: "Terms of Use",
     description:
       "The terms for using BioluminescentKayaking.us: what we do, what bookings mean, and why the glow forecast is an estimate, not a promise.",
-    url: "https://bioluminescentkayaking.us/terms/",
+    url: "https://bioluminescentkayaking.us/terms",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [

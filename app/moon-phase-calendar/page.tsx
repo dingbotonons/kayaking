@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   description:
     "Don't waste money paddling under a bright full moon! See month-by-month dark windows for bioluminescent kayaking, plus the moonset timing trick that saves your trip.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/moon-phase-calendar/",
+    canonical: "https://bioluminescentkayaking.us/moon-phase-calendar",
   },
   openGraph: {
     title: "Bioluminescence Moon Calendar 2026–2027: Best Dark Sky Nights",
     description:
       "Don't waste money paddling under a bright full moon! See month-by-month dark windows for bioluminescent kayaking, plus the moonset timing trick that saves your trip.",
-    url: "https://bioluminescentkayaking.us/moon-phase-calendar/",
+    url: "https://bioluminescentkayaking.us/moon-phase-calendar",
     siteName: "BioluminescentKayaking.us",
     locale: "en_US",
     type: "website",

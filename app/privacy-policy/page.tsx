@@ -6,17 +6,17 @@ import { PrivacySections } from "@/components/privacy/PrivacySections";
 import { PRIVACY_POLICY_DATA } from "@/src/data/privacyPolicy";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | BioluminescentKayaking.us",
+  title: "Privacy Policy",
   description:
     "Read our plain-English privacy policy: cookie usage, affiliate tracking parameters, analytics data collection, and our strict zero-data-selling guarantee.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/privacy-policy/",
+    canonical: "https://bioluminescentkayaking.us/privacy-policy",
   },
   openGraph: {
-    title: "Privacy Policy | BioluminescentKayaking.us",
+    title: "Privacy Policy",
     description:
       "Read our plain-English privacy policy: cookie usage, affiliate tracking parameters, analytics data collection, and our strict zero-data-selling guarantee.",
-    url: "https://bioluminescentkayaking.us/privacy-policy/",
+    url: "https://bioluminescentkayaking.us/privacy-policy",
     siteName: "BioluminescentKayaking.us",
     type: "website",
   },
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
     name: "Privacy Policy",
     description:
       "How BioluminescentKayaking.us handles your data: analytics cookies, affiliate link clicks, and what we never collect.",
-    url: "https://bioluminescentkayaking.us/privacy-policy/",
+    url: "https://bioluminescentkayaking.us/privacy-policy",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [

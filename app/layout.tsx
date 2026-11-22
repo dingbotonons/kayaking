@@ -50,13 +50,17 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${fraunces.variable} ${nunitoSans.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <head>
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
         <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLMs-full.txt" />
         <link rel="alternate" type="text/markdown" href="/pricing.md" title="Pricing" />
       </head>
-      <body className="min-h-full flex flex-col font-sans bg-white text-ink">
+      <body
+        className="min-h-full flex flex-col font-sans bg-white text-ink"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>

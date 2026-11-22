@@ -9,17 +9,17 @@ import { ChevronRight, Home } from "@/components/ui/Icons";
 import { IMAGE_CREDITS } from "@/src/data/image-credits";
 
 export const metadata: Metadata = {
-  title: "Image Credits & Photo Licensing | BioluminescentKayaking",
+  title: "Image Credits & Photo Licensing",
   description:
     "Complete photographic attribution and licensing directory: image sources, creative commons credits, and original photography across all 12 bay guides.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/image-credits/",
+    canonical: "https://bioluminescentkayaking.us/image-credits",
   },
   openGraph: {
-    title: "Image Credits & Photo Licensing | BioluminescentKayaking",
+    title: "Image Credits & Photo Licensing",
     description:
       "Complete photographic attribution and licensing directory: image sources, creative commons credits, and original photography across all 12 bay guides.",
-    url: "https://bioluminescentkayaking.us/image-credits/",
+    url: "https://bioluminescentkayaking.us/image-credits",
     siteName: "BioluminescentKayaking.us",
     type: "website",
   },
@@ -32,7 +32,7 @@ export default function ImageCreditsPage() {
     name: "Image Credits",
     description:
       "Every photograph used on BioluminescentKayaking.us, where it appears, and its source.",
-    url: "https://bioluminescentkayaking.us/image-credits/",
+    url: "https://bioluminescentkayaking.us/image-credits",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [

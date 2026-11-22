@@ -1,93 +1,52 @@
-import React from "react";
-import Link from "next/link";
+import * as React from "react";
+import { cva, type VariantProps } from "class-variance-authority";
+import { cn } from "@/lib/utils";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "outline";
-  href?: string;
-  external?: boolean;
-  children: React.ReactNode;
-  className?: string;
+const buttonVariants = cva(
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal disabled:pointer-events-none disabled:opacity-50 cursor-pointer",
+  {
+    variants: {
+      variant: {
+        default:
+          "bg-coral text-white shadow-sm hover:bg-[#ff7b52]",
+        secondary:
+          "bg-seafoam text-teal border border-teal/15 hover:bg-seafoam/80",
+        outline:
+          "border border-teal/20 bg-white text-ink hover:bg-seafoam/40 hover:text-teal",
+        ghost: "hover:bg-seafoam/50 text-ink hover:text-teal",
+        teal: "bg-teal text-white shadow-sm hover:bg-[#0c5956]",
+      },
+      size: {
+        default: "h-12 px-6 py-2",
+        sm: "h-9 px-4 text-xs",
+        lg: "h-14 px-8 text-base",
+        icon: "h-10 w-10",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
+  }
+);
+
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+  VariantProps<typeof buttonVariants> {
+  asChild?: boolean;
 }
 
-/**
- * Standardized Button Component
- * Rule 7: Buttons: h-12 px-6 rounded-full (minimum touch target 44px).
- * One style for primary (coral bg with white text), secondary (teal or seafoam), outline.
- */
-export function Button({
-  variant = "primary",
-  href,
-  external = false,
-  children,
-  className = "",
-  ...props
-}: ButtonProps) {
-  const baseClasses =
-    "inline-flex items-center justify-center h-12 px-6 rounded-full font-bold text-sm tracking-wide transition-all duration-200 active:scale-95 shrink-0";
-
-  const variantClasses = {
-    primary: "bg-coral hover:bg-coral-hover text-white shadow-sm",
-    secondary: "bg-seafoam hover:bg-seafoam-border text-teal border border-seafoam-border",
-    outline: "border-2 border-teal text-teal hover:bg-teal hover:text-white",
-  }[variant];
-
-  const combinedClasses = `${baseClasses} ${variantClasses} ${className}`;
-
-  if (href) {
-    if (external) {
-      return (
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={combinedClasses}
-        >
-          {children}
-        </a>
-      );
-    }
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, variant, size, ...props }, ref) => {
     return (
-      <Link href={href} className={combinedClasses}>
-        {children}
-      </Link>
+      <button
+        className={cn(buttonVariants({ variant, size, className }))}
+        ref={ref}
+        {...props}
+      />
     );
   }
+);
+Button.displayName = "Button";
 
-  return (
-    <button className={combinedClasses} {...props}>
-      {children}
-    </button>
-  );
-}
-
-interface BadgeProps {
-  children: React.ReactNode;
-  variant?: "seafoam" | "gold" | "cream" | "teal";
-  className?: string;
-}
-
-/**
- * Standardized Badge / Chip Component
- * Rule 7: Chips/badges: one height (h-7) site-wide.
- */
-export function Badge({
-  children,
-  variant = "seafoam",
-  className = "",
-}: BadgeProps) {
-  const variantClasses = {
-    seafoam: "bg-seafoam text-teal border border-teal/15",
-    gold: "bg-gold text-ink font-bold",
-    cream: "bg-cream text-teal border border-gold/30",
-    teal: "bg-teal text-white",
-  }[variant];
-
-  return (
-    <span
-      className={`inline-flex items-center h-7 px-3 rounded-full text-xs font-semibold ${variantClasses} ${className}`}
-    >
-      {children}
-    </span>
-  );
-}
-
+export { Button, buttonVariants };

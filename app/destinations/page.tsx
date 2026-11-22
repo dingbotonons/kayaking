@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   description:
     "Every glowing bay in America mapped: Florida Space Coast, Puerto Rico's 3 bio bays, Tomales Bay & San Juan Islands. See tonight's glow score and best months.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/destinations/",
+    canonical: "https://bioluminescentkayaking.us/destinations",
   },
   openGraph: {
     title: "Where to See Bioluminescence in the USA: 12 Glowing Bays",
     description:
       "Every glowing bay in America mapped: Florida Space Coast, Puerto Rico's 3 bio bays, Tomales Bay & San Juan Islands. See tonight's glow score and best months.",
-    url: "https://bioluminescentkayaking.us/destinations/",
+    url: "https://bioluminescentkayaking.us/destinations",
     siteName: "BioluminescentKayaking.us",
     type: "website",
     images: [

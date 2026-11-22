@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   description:
     "Which Puerto Rico bio bay is best? Compare Mosquito Bay (brightest), Laguna Grande (near San Juan) & La Parguera (swimming allowed). Tours from $55 + glow score.",
   alternates: {
-    canonical: "https://bioluminescentkayaking.us/puerto-rico/",
+    canonical: "https://bioluminescentkayaking.us/puerto-rico",
   },
   openGraph: {
     title: "Puerto Rico Bioluminescent Bay Tours: 3 Bio Bays Compared",
     description:
       "Which Puerto Rico bio bay is best? Compare Mosquito Bay (brightest), Laguna Grande (near San Juan) & La Parguera (swimming allowed). Tours from $55 + glow score.",
-    url: "https://bioluminescentkayaking.us/puerto-rico/",
+    url: "https://bioluminescentkayaking.us/puerto-rico",
     siteName: "BioluminescentKayaking.us",
     images: [
       {
